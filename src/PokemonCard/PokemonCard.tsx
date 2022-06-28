@@ -18,7 +18,7 @@ export default function PokemonCard({pokeID}:PokemonCardProps) {
 
     return (
         <div className="flex flex-col bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 m-2">
-            <img src={data.sprites.front_default}></img>
+            <img alt={(data.name.charAt(0).toUpperCase() + data.name.slice(1)) + " Pokemon Image"} src={data.sprites.front_default}></img>
             <h1 className="text-black">{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
         </div>
     );
