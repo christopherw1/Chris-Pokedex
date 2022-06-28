@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PokemonCard from './PokemonCard/PokemonCard';
 
 function App() {
   return (
@@ -8,8 +9,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Chris Pokedex
         </p>
+        <PokemonCard pokeID='658'></PokemonCard>
+        <PokemonCard pokeID='659'></PokemonCard>
+        <PokemonCard pokeID='660'></PokemonCard>
+        <PokemonCard pokeID='123'></PokemonCard>
         <a
           className="App-link"
           href="https://reactjs.org"
