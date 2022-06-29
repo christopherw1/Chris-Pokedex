@@ -11,9 +11,9 @@ function App() {
         <p>
           Chris Pokedex
         </p>
-        <PokemonCard pokeID='658'></PokemonCard>
-        <PokemonCard pokeID='659'></PokemonCard>
-        <PokemonCard pokeID='660'></PokemonCard>
+        <PokemonCard pokeID='4'></PokemonCard>
+        <PokemonCard pokeID='5'></PokemonCard>
+        <PokemonCard pokeID='6'></PokemonCard>
         <PokemonCard pokeID='150'></PokemonCard>
         <a
           className="App-link"
