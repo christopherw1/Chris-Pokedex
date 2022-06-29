@@ -20,6 +20,7 @@ export default function PokemonCard({pokeID}:PokemonCardProps) {
         <div className="flex flex-col bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 m-2">
             <img alt={(data.name.charAt(0).toUpperCase() + data.name.slice(1)) + " Pokemon Image"} src={data.sprites.front_default}></img>
             <h1 className="text-black">{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</h1>
+            <h2 className="text-black">Weight: {data.weight}</h2>
         </div>
     );
 }
