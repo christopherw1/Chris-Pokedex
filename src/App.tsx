@@ -14,7 +14,7 @@ function App() {
         <PokemonCard pokeID='658'></PokemonCard>
         <PokemonCard pokeID='659'></PokemonCard>
         <PokemonCard pokeID='660'></PokemonCard>
-        <PokemonCard pokeID='123'></PokemonCard>
+        <PokemonCard pokeID='150'></PokemonCard>
         <a
           className="App-link"
           href="https://reactjs.org"
