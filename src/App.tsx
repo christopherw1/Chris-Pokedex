@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import PokemonCard from './PokemonCard/PokemonCard';
 
@@ -12,7 +11,6 @@ function getPokeListRange(rangeStart: number, rangeEnd:number = 150) {
 }
 
 function App() {
-  const [filter, filterSet] = React.useState("");
   return (
     <div className="App">
       <header className="App-header">
