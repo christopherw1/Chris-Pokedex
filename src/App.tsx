@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import PokemonCard from './PokemonCard/PokemonCard';
 
+function getPokeListRange(rangeStart: number, rangeEnd:number = 150) {
+  let pokeList = [];
+  for(let i = rangeStart; i <= rangeEnd; i++) {
+    pokeList.push(<PokemonCard pokeID={i.toString()}></PokemonCard>)
+  }
+  return pokeList;
+}
+
 function App() {
   const [filter, filterSet] = React.useState("");
   return (
@@ -10,21 +18,14 @@ function App() {
       <header className="App-header">
         <img src={process.env.PUBLIC_URL+"Pokemon-Logo-PNG-Image.png"} className="App-logo" alt="logo" />
         <p>
-          Welcome to Chris' Pokedex, less gooooo <br></br> new line
+          Welcome to Chris' Pokedex, less gooooo
         </p>
-        
       </header>
-      <body className="App-body">
-        <PokemonCard pokeID='1'></PokemonCard>
-        <PokemonCard pokeID='2'></PokemonCard>
-        <PokemonCard pokeID='3'></PokemonCard>
-        <PokemonCard pokeID='4'></PokemonCard>
-        <PokemonCard pokeID='5'></PokemonCard>
-        <PokemonCard pokeID='6'></PokemonCard>
-        <PokemonCard pokeID='7'></PokemonCard>
-        <PokemonCard pokeID='8'></PokemonCard>
-        <PokemonCard pokeID='9'></PokemonCard>
-        <PokemonCard pokeID='150'></PokemonCard>
+      <body className="App-body inline-grid grid-cols-3 gap-4">
+        {/* {Array.from({ length: 150 }).map((_, index) => {
+          return <PokemonCard pokeID={index + 1 + ""}></PokemonCard>
+        })} */}
+        {getPokeListRange(1, 251)}
         {/* <a
           className="App-link"
           href="https://reactjs.org"
