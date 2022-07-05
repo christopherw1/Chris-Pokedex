@@ -1,7 +1,5 @@
-import React, { FormEvent } from 'react';
 import './App.css';
 import PokemonCard from './PokemonCard/PokemonCard';
-import { useState } from 'react';
 import PokemonSearch from './PokemonSearch/PokemonSearch';
 //import ReactDOM from 'react-dom/client';
 
