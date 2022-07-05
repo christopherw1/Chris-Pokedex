@@ -24,9 +24,9 @@ export default function PokemonCard({pokeID}:PokemonCardProps) {
             {/* let pokeMap = new Map(); */}
             {/* <h2 className="text-black">Weight: {}</h2> */}
             <div className="flex flex-col">
-            {/* <div className="bg-slate-300 p-1 rounded-xl m-1 ">{data.types[0].type.name}</div>
-            <div className="bg-slate-300 p-1 rounded-xl m-1 ">{data.types[1].type.name}</div>
-             */}
+                {/* <div className="bg-slate-300 p-1 rounded-xl m-1 ">{data.types[0].type.name}</div>
+                <div className="bg-slate-300 p-1 rounded-xl m-1 ">{data.types[1].type.name}</div>
+                */}
                 {data.types.map((type_info: any) => {
                     return (
                         <div className="bg-slate-800 p-1 rounded-xl m-1 text-lg">{type_info.type.name.charAt(0).toUpperCase() + type_info.type.name.slice(1)}</div>
