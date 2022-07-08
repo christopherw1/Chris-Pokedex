@@ -7,7 +7,6 @@ import PokemonSearch from './PokemonSearch/PokemonSearch';
 function App() {
   const [ region, setRegion ] = useState(1);
 
-
   // useEffect(() => {
   //   setTimeout(() => {
   //     setCount((count) => count + 1);
@@ -32,7 +31,7 @@ function App() {
         <PokemonSearch></PokemonSearch><br></br>
       </header>
       <body className="App-body inline-grid">
-        <p>Or pick a region</p>
+        <p>Or pick a region ↓</p>
         <div className="inline-grid grid-cols-6 gap-4">
           <button onClick={() => setRegion((c) => 1)}>Kanto</button>
           <button onClick={() => setRegion((c) => 2)}>Johto</button>
